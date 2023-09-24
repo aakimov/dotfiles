@@ -1,0 +1,68 @@
+configuration {
+  font: "monospace 11";
+  location: 2;
+  show-icons: true;
+  timeout {
+    action: "kb-cancel";
+    delay: 0;
+  }
+  filebrowser {
+    directories-first: true;
+    sorting-method: "name";
+  }
+}
+
+// Theme that matches alacritty colorscheme
+* {
+  black: #101421;
+  blue: #47a0f3;
+  white: #fffbf6;
+
+  background: var(black);
+  font: "Noto Sans Mono 10";
+  foreground: var(white);
+  lightbg: var(black);
+  lightfg: var(white);
+  spacing: 0;
+}
+window {
+  border: 0;
+  padding: 2px;
+  width: 25%;
+}
+listview {
+  border: 0;
+  scrollbar: true;
+  fixed-height: false;
+  lines: 5;
+}
+element {
+  padding: 3px;
+  spacing: 5px;
+}
+element-text {
+  horizontal-align: 0.0;
+  padding: 0;
+  vertical-align: 0.5;
+}
+element-icon {
+  size: 32px;
+}
+element .selected .normal {
+  background-color: var(blue);
+  text-color: var(black);
+}
+scrollbar {
+  handle-width: 8px;
+  handle-color: #565656;
+  width: 4px;
+}
+inputbar {
+  children: [entry];
+}
+entry {
+  background-color: #e5e9f0;
+  padding: 2px;
+  placeholder: "";
+  text-color: var(black);
+}

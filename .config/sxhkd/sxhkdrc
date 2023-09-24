@@ -1,0 +1,16 @@
+super + m
+	bspc desktop -l next
+alt + Tab
+	bspc node -f next.local.!hidden.window
+
+super + shift + m
+	bspc node -s biggest.local
+super + shift + f
+	bspc node -t '~fullscreen'
+super + shift + w
+	bspc node -c
+
+super + @space
+	rofi -show drun
+super + Return
+	alacritty
